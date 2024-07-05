@@ -7,6 +7,11 @@ export default [
   {files: ["**/*.{js,mjs,cjs,jsx}"]},
   { languageOptions: { parserOptions: { ecmaFeatures: { jsx: true } } } },
   {languageOptions: { globals: globals.browser }},
+  {
+    rules: {
+      "no-console": "warn"
+    }
+  },
   pluginJs.configs.recommended,
   pluginReactConfig,
 ];
