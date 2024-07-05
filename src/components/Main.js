@@ -9,20 +9,35 @@ import './Main.css'
 export default class Main extends Component {
     state = {
         newTask: '',
-        tasks: []
+        tasks: [],
+        index: -1
     }
 
     handleSubmit = (e) => {
         e.preventDefault()
 
+        console.log('disparei')
+
         const { tasks } = this.state
-        let { newTask } = this.state
+        let { newTask, index } = this.state
 
         newTask = newTask.trim()
 
         if(tasks.indexOf(newTask) !== -1) return
 
         const newTasks = [ ...tasks ]
+
+        if(index !== -1) {
+            newTasks[index] = newTask
+
+            this.setState({
+                tasks: [ ...newTasks ],
+                newTask: '',
+                index: -1
+            })
+
+            return
+        }
 
         this.setState({
             tasks: [ ...newTasks, newTask ],
@@ -39,7 +54,10 @@ export default class Main extends Component {
     handleEdit = (e, index) => {
         const { tasks } = this.state
 
-        const taskEdit = [ ...tasks ]
+        this.setState({
+            index: index,
+            newTask: tasks[index]
+        })
 
     }
 
