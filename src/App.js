@@ -4,5 +4,10 @@ import Main from './components/Main'
 import './App.css'
 
 export default function App() {
-  return <Main />
+  return (
+    <div>
+      <Main />
+      <footer>Feito com ❤️ por Gabriel Sales</footer>
+    </div>
+  )
 }

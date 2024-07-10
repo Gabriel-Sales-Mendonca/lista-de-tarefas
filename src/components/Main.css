@@ -11,3 +11,9 @@
     font-size: 20px;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .main {
+        margin: 50px 20px;
+    }
+}
