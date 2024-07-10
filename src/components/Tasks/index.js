@@ -9,7 +9,9 @@ export default function Tasks({ tasks, handleEdit, handleDelete }) {
         <ul className='tasks'>
             {tasks.map((task, index) => (
                 <li key={task}>
-                    {task}
+                    <div className='text'>
+                        {task}
+                    </div>
                     <div>
                         <FaEdit onClick={ (e) => handleEdit(e, index)} className='edit'/>
                         <FaWindowClose onClick={ (e) => handleDelete(e, index)} className='delete'/>

@@ -10,6 +10,12 @@
     transition: all 600ms;
 }
 
+.tasks li .text {
+    list-style-type: none;
+    width: 80%;
+    word-wrap: break-word;
+}
+
 .tasks li:hover {
     background-color: rgb(89, 192, 243);
 }
