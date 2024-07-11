@@ -12,7 +12,7 @@ export default function Tasks({ tasks, handleEdit, handleDelete }) {
                     <div className='text'>
                         {task}
                     </div>
-                    <div>
+                    <div className='icons'>
                         <FaEdit onClick={ (e) => handleEdit(e, index)} className='edit'/>
                         <FaWindowClose onClick={ (e) => handleDelete(e, index)} className='delete'/>
                     </div>

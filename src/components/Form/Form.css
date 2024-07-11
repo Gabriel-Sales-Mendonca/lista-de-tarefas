@@ -7,7 +7,7 @@
 
 .form input {
     height: 40px;
-    min-width: 80%;
+    width: 100%;
     font-size: 20px;
     padding: 0 20px;
     border: 1px solid rgb(180, 176, 176);

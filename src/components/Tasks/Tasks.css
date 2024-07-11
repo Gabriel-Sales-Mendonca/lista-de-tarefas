@@ -15,13 +15,18 @@
     width: 80%;
     word-wrap: break-word;
 }
-
+/*rgb(89, 192, 243)*/
 .tasks li:hover {
-    background-color: rgb(89, 192, 243);
+    background-color: rgb(61, 11, 109);
+    color: white;
+}
+
+.icons {
+    display: flex;
 }
 
 .edit {
-    margin-right: 15px;
+    margin: 0px 15px;
     color: blue;
 }
 
@@ -36,6 +41,6 @@
 
 .tasks li:hover .edit,
 .tasks li:hover .delete {
-    color: #000;
+    color: white;
     transition: all 600ms;
 }
