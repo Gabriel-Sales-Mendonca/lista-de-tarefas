@@ -37,6 +37,8 @@ export default class Main extends Component {
 
         newTask = newTask.trim()
 
+        if(!newTask) return
+
         if(tasks.indexOf(newTask) !== -1) return
 
         const newTasks = [ ...tasks ]

@@ -1,7 +1,7 @@
 .main {
     background-color: #fff;
     padding: 30px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -10,4 +10,10 @@
 .main h1 {
     font-size: 20px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .main {
+        margin: 50px 20px;
+    }
 }

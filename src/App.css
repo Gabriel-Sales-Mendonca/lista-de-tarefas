@@ -7,9 +7,15 @@
 
 body {
   font-family: monospace;
-  background: #0a4f70;
+  background-color: rgb(61, 11, 109);
 }
 
 button {
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 20px;
 }
