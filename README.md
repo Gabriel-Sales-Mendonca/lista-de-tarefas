@@ -1,7 +1,7 @@
 # Lista de Tarefas
 # Sobre o projeto
 
-<a href="https://tarefas-gabrielsales.netlify.app/" target="_blank">https://tarefas-gabrielsales.netlify.app/</a>
+[https://tarefas-gabrielsales.netlify.app/](https://tarefas-gabrielsales.netlify.app/)
 
 É um site feito com React JS, que permite ao usuário **CADASTRAR, EDITAR e EXCLUIR** tarefas.  
 
